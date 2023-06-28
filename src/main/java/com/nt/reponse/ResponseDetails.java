@@ -7,20 +7,20 @@ import lombok.Data;
 @Data
 public class ResponseDetails {
 	
-	private Integer plan_id;
-	private long case_num;
-	private String plan_name;
-	private String plan_status;
+	private Integer planId;
+	private long caseNumber;
+	private String planName;
+	private String planStatus;
 
-	private String holder_name;
+	private String holderName;
 
-	private Long holder_ssn;
+	private Long holderSsn;
 
-	private String benefit_amt;
+	private String benefitAmt;
 
-	private LocalDate start_date;
+	private LocalDate startDate;
 
-	private LocalDate end_date;
+	private LocalDate endDate;
 
-	private String denial_reason;
+	private String denialReason;
 }

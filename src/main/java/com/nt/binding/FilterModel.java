@@ -7,12 +7,12 @@ import lombok.Data;
 @Data
 public class FilterModel {
 
-	private String plan_name;
+	private String planName;
 
-	private String plan_status;
+	private String planStatus;
 
-	private LocalDate start_date;
+	private LocalDate startDate;
 
-	private LocalDate end_date;
+	private LocalDate endDate;
 
 }

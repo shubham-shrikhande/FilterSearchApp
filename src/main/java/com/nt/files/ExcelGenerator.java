@@ -31,14 +31,14 @@ public class ExcelGenerator {
 		for(int i=0; i<response.size(); i++) {
 			HSSFRow dataRow =sheet.createRow(i+1);
 			ResponseDetails record=response.get(i);
-			dataRow.createCell(0).setCellValue(record.getHolder_name());
-			dataRow.createCell(1).setCellValue(record.getHolder_ssn());
-			dataRow.createCell(2).setCellValue(record.getPlan_name());
-			dataRow.createCell(3).setCellValue(record.getPlan_status());
-			dataRow.createCell(4).setCellValue(String.valueOf(record.getStart_date()));
-			dataRow.createCell(4).setCellValue(String.valueOf(record.getEnd_date()));
-			dataRow.createCell(4).setCellValue(String.valueOf(record.getBenefit_amt()));
-			dataRow.createCell(4).setCellValue(String.valueOf(record.getDenial_reason()));
+			dataRow.createCell(0).setCellValue(record.getHolderName());
+			dataRow.createCell(1).setCellValue(record.getHolderSsn());
+			dataRow.createCell(2).setCellValue(record.getPlanName());
+			dataRow.createCell(3).setCellValue(record.getPlanStatus());
+			dataRow.createCell(4).setCellValue(String.valueOf(record.getStartDate()));
+			dataRow.createCell(4).setCellValue(String.valueOf(record.getEndDate()));
+			dataRow.createCell(4).setCellValue(String.valueOf(record.getBenefitAmt()));
+			dataRow.createCell(4).setCellValue(String.valueOf(record.getDenialReason()));
 		}
 		workbook.write(res.getOutputStream());
 		workbook.close();

@@ -39,14 +39,14 @@ public class PdfGenerator {
 		int sno = 0;
 		for (ResponseDetails record : response) {
 			table.addCell(String.valueOf(sno));
-			table.addCell(record.getHolder_name());
-			table.addCell(String.valueOf(record.getHolder_ssn()));
-			table.addCell(record.getPlan_name());
-			table.addCell(record.getPlan_status());
-			table.addCell(String.valueOf(record.getStart_date()));
-			table.addCell(String.valueOf(record.getEnd_date()));
-			table.addCell(record.getBenefit_amt());
-			table.addCell(String.valueOf(record.getDenial_reason()));
+			table.addCell(record.getHolderName());
+			table.addCell(String.valueOf(record.getHolderSsn()));
+			table.addCell(record.getPlanName());
+			table.addCell(record.getPlanStatus());
+			table.addCell(String.valueOf(record.getStartDate()));
+			table.addCell(String.valueOf(record.getEndDate()));
+			table.addCell(record.getBenefitAmt());
+			table.addCell(String.valueOf(record.getDenialReason()));
 			sno++;
 		}
 		document.add(table);

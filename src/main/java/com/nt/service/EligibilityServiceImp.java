@@ -41,10 +41,10 @@ public class EligibilityServiceImp implements IEligibilityService {
 			
 
 		} else {
-			String planName = model.getPlan_name();
-			String planStatus = model.getPlan_status();
-			LocalDate startDate = model.getStart_date();
-			LocalDate endDate = model.getEnd_date();
+			String planName = model.getPlanName();
+			String planStatus = model.getPlanStatus();
+			LocalDate startDate = model.getStartDate();
+			LocalDate endDate = model.getEndDate();
 
 			EligibilityDetails entity = new EligibilityDetails();
 
@@ -74,13 +74,13 @@ public class EligibilityServiceImp implements IEligibilityService {
 	private boolean requestData(FilterModel model) {
 		boolean isEmpty=true;
 		
-		if(model.getPlan_name()!=null && model.getPlan_name().equals("")) {
+		if(model.getPlanName()!=null && model.getPlanName().equals("")) {
 			return false;
 		}
-		if(model.getPlan_status()!=null && model.getPlan_status().equals("")) {
+		if(model.getPlanStatus()!=null && model.getPlanStatus().equals("")) {
 			return false;
 		}
-		if(model.getStart_date()!=null && model.getStart_date().equals("")) {
+		if(model.getStartDate()!=null && model.getStartDate().equals("")) {
 			return false;
 		}
 		return isEmpty;
